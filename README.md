@@ -1,2 +1,4 @@
 # vszdev.github.io
-Personal Website
+
+Source code for my personal website.
+Current under construction
