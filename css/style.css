@@ -148,7 +148,7 @@ a:hover {
 
 /*--/ Title A /--*/
 .title-box {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .title-a {
@@ -200,11 +200,32 @@ a:hover {
 
 .about-text {
   font-size: 18px;
+  margin-right: 0.2cm;
+}
+
+.icon-color {
+  color: #13a1fa;
+  font-size: 28px;
+  padding: 0.5rem;
+}
+
+.first-icon-color {
+  margin-left: 0.5rem;
 }
 
 /*------/ Box /------*/
 .box-pl2 {
   padding-left: 2rem;
+}
+
+.button-resume {
+  color: #13a1fa;
+  border: 1.5px solid;
+  border-color: #13a1fa;
+  font-size: 14px;
+  font-style: bold;
+  margin-bottom: 0.3cm;
+  font-weight: 600;
 }
 
 .box-shadow-full {
@@ -221,9 +242,78 @@ a:hover {
   }
 }
 
+/*------/ Projects /------*/
+.gitlet {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  place-items: center;
+}
+
+.project-content {
+  padding-bottom: 2rem;
+}
+
+.project-intro {
+  font-size: 18px;
+  margin-top: -1cm;
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(108, 99, 99);
+}
+
+.project-date-logo {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 0.25cm;
+}
+
+.project-date {
+  font-size: 15px;
+  color: #000000;
+}
+
+/* .work-content .w-more {
+  color: #000000;
+  font-size: 1rem;
+  text-align: center;
+}
+.work-content .w-more .w-ctegory {
+  color: #0078ff;
+} */
+
+.project-main {
+  padding-left: 1.5cm;
+  padding-right: 1.5cm;
+  color: #000000;
+}
+
+.project-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.work-img {
+  display: block;
+  /* overflow: hidden; */
+
+  transform: scale(0.5);
+}
+
+.work-img:hover img {
+  transform: scale(1.3);
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
 /*------/ Socials /------*/
 .socials {
-  padding: 1.5rem 0;
+  padding-top: 0.25cm;
+  padding-left: 0.25cm;
 }
 .socials ul li {
   display: inline-block;
@@ -825,9 +915,33 @@ a:hover {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.sap-logo {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fincad-logo {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.15cm;
+}
+
+.fincad-title-adj {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1cm;
+}
+
+.work-years {
+  margin-top: -0.4cm;
+  text-align: center;
+}
+
 .service-box {
   background-color: #fff;
-  padding: 2.5rem 1.3rem;
+  padding: 2rem 1rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -838,6 +952,7 @@ a:hover {
   background-color: #0078ff;
   box-shadow: 0 0 0 10px #cde1f8;
 }
+
 .service-box .service-ico {
   margin-bottom: 1rem;
   color: #1e1e1e;
@@ -854,7 +969,7 @@ a:hover {
 }
 .service-box .s-title {
   font-size: 1.4rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
   padding: 0.4rem 0;
 }
@@ -899,29 +1014,34 @@ a:hover {
   backface-visibility: hidden;
   background-color: #fff;
 }
-.work-box:hover img {
+/* .work-box:hover img {
+  transform: scale(1.3);
+} */
+
+/* .work-img {
+  display: block; */
+/* overflow: hidden;
+   */
+/* transform: scale(0.5);
+} */
+
+/* .work-img:hover img {
   transform: scale(1.3);
 }
 
-.work-img {
-  display: block;
-  overflow: hidden;
-}
 .work-img img {
   transition: all 1s;
-}
+} */
 
-.work-content {
-  padding: 2rem 3% 1rem 4%;
-}
-.work-content .w-more {
-  color: #4e4e4e;
-  font-size: 0.8rem;
+/* .work-content .w-more {
+  color: #000000;
+  font-size: 1rem;
+  text-align: center;
 }
 .work-content .w-more .w-ctegory {
   color: #0078ff;
-}
-.work-content .w-like {
+} */
+/* .work-content .w-like {
   font-size: 2.5rem;
   color: #0078ff;
   float: right;
@@ -931,7 +1051,7 @@ a:hover {
 }
 .work-content .w-like .num-like {
   font-size: 0.7rem;
-}
+} */
 
 .w-title {
   font-size: 1.2rem;
