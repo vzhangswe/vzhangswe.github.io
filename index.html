@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,14 +7,14 @@
     <title>Victor Zhang Personal Website</title>
 
     <!-- Favicons -->
-    <link href="img/v-symbol.png" rel="icon" />
-    <!-- <link href="" rel="apple-touch-icon" /> -->
+    <link href="img/V_logo.png" rel="icon" />
+    <link href="img/V_logo.png" rel="apple-touch-icon" />
 
     <!-- Vendor CSS Files -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" /> -->
+    <!-- <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> -->
 
     <!-- Template Main CSS File -->
     <link href="css/style.css" rel="stylesheet" />
@@ -31,8 +31,8 @@
             <li><a class="nav-link scrollto active" href="#home">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#work">Work</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#education">Education</a></li> -->
             <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
-            <!-- <li><a class="nav-link scrollto" href="#blog">Blog</a></li> -->
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -45,7 +45,7 @@
     <div
       id="home"
       class="home route bg-image"
-      style="background-image: url(/img/img-1.jpg)"
+      style="background-image: url(/img/background.jpg)"
     >
       <div class="overlay-itro"></div>
       <div class="home-content display-table">
@@ -75,7 +75,7 @@
                 <div class="row">
                   <div class="col-md-4">
                     <img
-                      src="/img/img-holder.jpeg"
+                      src="/img/victor-photo.jpg"
                       class="img-fluid rounded photo-size"
                     />
                   </div>
@@ -101,14 +101,14 @@
 
                           <br />
                           <br />
-                          I am currently pursuing a second Bachelor of Science
-                          degree in Computer Science and Mathematics at the
+                          I am currently pursuing a Bachelor of Science
+                          second degree in Computer Science and Mathematics at the
 
-                          <a href="https://www.ubc.ca/" class="about-text-link"
+                          <a href="https://www.ubc.ca/" class="about-text-link" target="_blank" rel="noopener noreferrer"
                             >University of British Columbia</a
                           >. My previous degree were Bachelor of Commerce in
                           Finance and Master of Science in Finance from
-                          <a href="https://www.sfu.ca/" class="about-text-link"
+                          <a href="https://www.sfu.ca/" class="about-text-link" target="_blank" rel="noopener noreferrer"
                             >Simon Fraser University</a
                           >. I am also a Chartered Financial Analyst (CFA).
                           <br />
@@ -171,7 +171,7 @@
       </section>
       <!-- End About Section -->
 
-      <!-- ======= Experience Section ======= -->
+      <!-- ======= Work Experience Section ======= -->
       <section id="work" class="services-mf pt-5 route">
         <div class="container">
           <div class="row">
@@ -182,33 +182,42 @@
               </div>
             </div>
           </div>
+
           <div class="row">
             <div class="col-md-6">
               <div class="service-box">
-                <div class="service-ico">
-                      <img class="sap-logo" src="/img/sap-logo.jpg">
+                <div class="service-ico sap-img">
+                  <a href="https://www.sap.com/index.html" target="_blank" rel="noopener noreferrer">
+                    <img class="sap-logo" src="/img/sap-logo.jpg">
+                  </a>
+
                 </div>
                 <div class="service-content">
                   <h2 class="s-title">Software Developer</h2>
                   <p class="work-years">May 2022 - Dec. 2022</p>
-                  <p class="s-description text-center">
+                  <p class="s-description">
                     Optimized and updated more than 100 unit tests, regression tests, and integration tests to validate new features performed as designed utilizing pytest framework; test coverage > 95%
                   </p>
+                  <p class="tech">Java, JavaScript, HTML, CSS</p>
                 </div>
               </div>
             </div>
+
             <div class="col-md-6">
               <div class="service-box">
-                <div class="service-ico">
+                <div class="service-ico fincad-img">
+                  <a href="https://fincad.com/" target="_blank" rel="noopener noreferrer">
                     <img class="fincad-logo" src="/img/fincad-logo.jpeg">
+                  </a>
                 </div>
                 <div class="service-content">
                   <h2 class="s-title fincad-title-adj">Quantitative Developer</h2>
                   <p class="work-years">Apr. 2018 - Nov. 2020</p>
-                  <p class="s-description text-center">
-                    Ensured the development of well-designed and testable code. Gathered and evaluated user feedback and
-provided code optimization, which improved customer service and product quality
-                  </p>
+                  <p class="s-description">
+                    Design and development cloud-based quantitative solutions based on clients' requirements. 
+                    Optimized and updated more than 100 unit tests, regression tests, and integration tests.
+                  </p class="s-description">
+                  <p class="tech tech-fincad-adj">Python, Django, PyTest, RESTful API, FINCAD SDK</p>
                 </div>
               </div>
             </div>
@@ -217,157 +226,9 @@ provided code optimization, which improved customer service and product quality
         </div>
       </section>
 
-      <!-- End Experience Section -->
+      <!-- End Work Experience Section -->
 
-      <!-- ======= Counter Section ======= -->
-      <!-- <div
-        class="section-counter paralax-mf bg-image"
-        style="background-image: url(assets/img/counters-bg.jpg)"
-      >
-        <div class="overlay-mf"></div>
-        <div class="container position-relative">
-          <div class="row">
-            <div class="col-sm-3 col-lg-3">
-              <div class="counter-box counter-box pt-4 pt-md-0">
-                <div class="counter-ico">
-                  <span class="ico-circle"><i class="bi bi-check"></i></span>
-                </div>
-                <div class="counter-num">
-                  <p
-                    data-purecounter-start="0"
-                    data-purecounter-end="450"
-                    data-purecounter-duration="1"
-                    class="counter purecounter"
-                  ></p>
-                  <span class="counter-text">WORKS COMPLETED</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-              <div class="counter-box pt-4 pt-md-0">
-                <div class="counter-ico">
-                  <span class="ico-circle"
-                    ><i class="bi bi-journal-richtext"></i
-                  ></span>
-                </div>
-                <div class="counter-num">
-                  <p
-                    data-purecounter-start="0"
-                    data-purecounter-end="25"
-                    data-purecounter-duration="1"
-                    class="counter purecounter"
-                  ></p>
-                  <span class="counter-text">YEARS OF EXPERIENCE</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-              <div class="counter-box pt-4 pt-md-0">
-                <div class="counter-ico">
-                  <span class="ico-circle"><i class="bi bi-people"></i></span>
-                </div>
-                <div class="counter-num">
-                  <p
-                    data-purecounter-start="0"
-                    data-purecounter-end="550"
-                    data-purecounter-duration="1"
-                    class="counter purecounter"
-                  ></p>
-                  <span class="counter-text">TOTAL CLIENTS</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-              <div class="counter-box pt-4 pt-md-0">
-                <div class="counter-ico">
-                  <span class="ico-circle"><i class="bi bi-award"></i></span>
-                </div>
-                <div class="counter-num">
-                  <p
-                    data-purecounter-start="0"
-                    data-purecounter-end="48"
-                    data-purecounter-duration="1"
-                    class="counter purecounter"
-                  ></p>
-                  <span class="counter-text">AWARD WON</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- End Counter Section -->
-
-      <!-- ======= Testimonials Section ======= -->
-      <!-- <div
-        class="testimonials paralax-mf bg-image"
-        style="background-image: url(assets/img/overlay-bg.jpg)"
-      >
-        <div class="overlay-mf"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div
-                class="testimonials-slider swiper"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-box">
-                      <div class="author-test">
-                        <img
-                          src="assets/img/testimonial-2.jpg"
-                          alt=""
-                          class="rounded-circle b-shadow-a"
-                        />
-                        <span class="author">Xavi Alonso</span>
-                      </div>
-                      <div class="content-test">
-                        <p class="description lead">
-                          Curabitur arcu erat, accumsan id imperdiet et,
-                          porttitor at sem. Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-
-      <div class="swiper-slide">
-                    <div class="testimonial-box">
-                      <div class="author-test">
-                        <img
-                          src="assets/img/testimonial-4.jpg"
-                          alt=""
-                          class="rounded-circle b-shadow-a"
-                        />
-                        <span class="author">Marta Socrate</span>
-                      </div>
-                      <div class="content-test">
-                        <p class="description lead">
-                          Curabitur arcu erat, accumsan id imperdiet et,
-                          porttitor at sem. Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit.
-                        </p>
-                      </div>
-                    </div>
-                  </div> -->
-      <!-- End testimonial item -->
-      </div>
-                <div class="swiper-pagination"></div>
-              </div>
-
-      <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div>
-      </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Testimonials Section -->
-
-            <!-- ======= Projects Section ======= -->
+      <!-- ======= Projects Section ======= -->
       <section id="projects" class="portfolio-mf sect-pt4 route">
         <div class="container">
           <div class="row">
@@ -380,20 +241,81 @@ provided code optimization, which improved customer service and product quality
           </div>
           <div class="row">
 
-
+            <div class="col-md-3"></div>
             <div class="col-md-6">
               <div class="project-box">
-                  <div class="work-img">
+                  <div class="yelp-img">
+                    <img src="/img/university-yelp.png" class="yelp"/>
+                  </div>
+                    <div class="project-content">
+                        <div class="row">
+                            <p class="project-intro">Java, Swing, Junit, Json</p>
+                            <p class="project-main"> A Yelp style application built using Java and Swing UI package. Used JUnit for testing and Json for data persistence.</p>
+                            <div class="project-date-logo">
+                                <div class="row">
+                                    <a href="https://github.com/viczdev/UniversityYelp" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github project-date-logo"></i></a>
+                                </div>
+                                <div class="row">
+                                    <span class="project-date">Dec. 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+
+
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="project-box">
+                  <div class="roommate-finder-image">
+                    <img src="/img/roommate-finder.png" class="roommate-finder"/>
+                  </div>
+                    <div class="project-content">
+                        <div class="row roommate-finder-text">
+                            <p class="project-intro">Python, Flask, HTML, CSS, PostgreSQL, Oauth2</p>
+                            <p class="project-main"> A Flask-driven website to help student find roommate. 
+                              Used OAuth 2.0 for user authentication and PostgreSQL to store data.</p>
+                            <div class="project-date-logo">
+                                <div class="row">
+                                  <div class="col-sm-4"></div>
+                                  <div class="col-sm-2"> 
+                                    <a href="http://victorzhang.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
+                                      <i class="bi bi-link project-date-logo"></i></a>
+                                  </div>
+
+                                  <div class="col-sm-2">
+                                    <a href="https://github.com/viczdev/RoommateFinder" target="_blank" rel="noopener noreferrer">
+                                      <i class="bi bi-github project-date-logo"></i></a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <span class="project-date">Dec. 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+
+
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="project-box">
+                  <div class="gitlet-img">
                     <img src="/img/gitlet.jpg" class="gitlet"/>
                   </div>
                     <div class="project-content">
                         <div class="row">
                             <p class="project-intro">Java, SHA-1</p>
                             <p class="project-main"> A local version control system similar to Git, including initial, add, commit, remove, log, status,
-                                checkout, branch, and merge</p>
+                                checkout, branch, and merge.</p>
                             <div class="project-date-logo">
                                 <div class="row">
-                                    <a href="https://github.com/viczdev/cs61b/tree/main/proj2" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://github.com/viczdev/UniversityYelp" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-github project-date-logo"></i></a>
                                 </div>
                                 <div class="row">
@@ -404,240 +326,14 @@ provided code optimization, which improved customer service and product quality
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6">
-                <div class="project-box">
-                    <div class="work-img">
-                      <img src="/img/gitlet.jpg" class="gitlet"/>
-                    </div>
-                      <div class="project-content">
-                          <div class="row">
-                              <p class="project-intro">Java, SHA-1</p>
-                              <p class="project-main"> A local version control system similar to Git, including initial, add, commit, remove, log, status,
-                                  checkout, branch, and merge</p>
-                              <div class="project-date-logo">
-                                  <div class="row">
-                                      <a href="https://github.com/viczdev/cs61b/tree/main/proj2" target="_blank" rel="noopener noreferrer">
-                                      <i class="bi bi-github project-date-logo"></i></a>
-                                  </div>
-                                  <div class="row">
-                                      <span class="project-date">Aug. 2021</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-            <div class="col-md-6">
-              <div class="project-box">
-                <a
-                  href="assets/img/work-2.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                >
-                  <div class="work-img">
-                    <img src="assets/img/work-2.jpg" alt="" class="img-fluid" />
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Loreda Cuno Nere</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> /
-                        <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <a href="portfolio-details.html">
-                          <span class="bi bi-plus-circle"></span
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="project-box">
-                <a
-                  href="assets/img/work-2.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                >
-                  <div class="work-img">
-                    <img src="assets/img/work-2.jpg" alt="" class="img-fluid" />
-                  </div>
-                </a>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Loreda Cuno Nere</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> /
-                        <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <a href="portfolio-details.html">
-                          <span class="bi bi-plus-circle"></span
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
+            <div class="col-md-3"></div>
           </div>
         </div>
       </section>
       <!-- End Portfolio Section -->
 
-      <!-- ======= Blog Section ======= -->
-      <!-- <section id="blog" class="blog-mf sect-pt4 route">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="title-box text-center">
-                <h3 class="title-a">Blog</h3>
-                <p class="subtitle-a">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </p>
-                <div class="line-mf"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card card-blog">
-                <div class="card-img">
-                  <a href="blog-single.html"
-                    ><img src="assets/img/post-1.jpg" alt="" class="img-fluid"
-                  /></a>
-                </div>
-                <div class="card-body">
-                  <div class="card-category-box">
-                    <div class="card-category">
-                      <h6 class="category">Travel</h6>
-                    </div>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="blog-single.html">See more ideas about Travel</a>
-                  </h3>
-                  <p class="card-description">
-                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
-                    dapibus. Praesent sapien massa, convallis a pellentesque
-                    nec, egestas non nisi.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <div class="post-author">
-                    <a href="#">
-                      <img
-                        src="assets/img/testimonial-2.jpg"
-                        alt=""
-                        class="avatar rounded-circle"
-                      />
-                      <span class="author">Morgan Freeman</span>
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="bi bi-clock"></span> 10 min
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-blog">
-                <div class="card-img">
-                  <a href="blog-single.html"
-                    ><img src="assets/img/post-2.jpg" alt="" class="img-fluid"
-                  /></a>
-                </div>
-                <div class="card-body">
-                  <div class="card-category-box">
-                    <div class="card-category">
-                      <h6 class="category">Web Design</h6>
-                    </div>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="blog-single.html">See more ideas about Travel</a>
-                  </h3>
-                  <p class="card-description">
-                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
-                    dapibus. Praesent sapien massa, convallis a pellentesque
-                    nec, egestas non nisi.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <div class="post-author">
-                    <a href="#">
-                      <img
-                        src="assets/img/testimonial-2.jpg"
-                        alt=""
-                        class="avatar rounded-circle"
-                      />
-                      <span class="author">Morgan Freeman</span>
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="bi bi-clock"></span> 10 min
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-blog">
-                <div class="card-img">
-                  <a href="blog-single.html"
-                    ><img src="assets/img/post-3.jpg" alt="" class="img-fluid"
-                  /></a>
-                </div>
-                <div class="card-body">
-                  <div class="card-category-box">
-                    <div class="card-category">
-                      <h6 class="category">Web Design</h6>
-                    </div>
-                  </div>
-                  <h3 class="card-title">
-                    <a href="blog-single.html">See more ideas about Travel</a>
-                  </h3>
-                  <p class="card-description">
-                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
-                    dapibus. Praesent sapien massa, convallis a pellentesque
-                    nec, egestas non nisi.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <div class="post-author">
-                    <a href="#">
-                      <img
-                        src="assets/img/testimonial-2.jpg"
-                        alt=""
-                        class="avatar rounded-circle"
-                      />
-                      <span class="author">Morgan Freeman</span>
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="bi bi-clock"></span> 10 min
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- End Blog Section -->
-
       <!-- ======= Contact Section ======= -->
-      <!-- <section
+      <section
         id="contact"
         class="paralax-mf footer-paralax bg-image sect-mt4 route"
         style="background-image: url(assets/img/overlay-bg.jpg)"
@@ -645,24 +341,24 @@ provided code optimization, which improved customer service and product quality
         <div class="overlay-mf"></div>
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
               <div class="contact-mf">
                 <div id="contact" class="box-shadow-full">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
                       <div class="title-box-2">
-                        <h5 class="title-left">Send Message Us</h5>
+                        <h5 class="title-left">Get in Touch</h5>
                       </div>
                       <div>
                         <form
-                          action="forms/contact.php"
+                          action="https://formspree.io/f/xrgjjzee"
                           method="post"
-                          role="form"
-                          class="php-email-form"
                         >
                           <div class="row">
-                            <div class="col-md-12 mb-3">
-                              <div class="form-group">
+                            <div class="col-md-12 mb-3 contact-layout">
+                              <div class="form-group contact-layout">
                                 <input
                                   type="text"
                                   name="name"
@@ -708,14 +404,7 @@ provided code optimization, which improved customer service and product quality
                                 ></textarea>
                               </div>
                             </div>
-                            <div class="col-md-12 text-center my-3">
-                              <div class="loading">Loading</div>
-                              <div class="error-message"></div>
-                              <div class="sent-message">
-                                Your message has been sent. Thank you!
-                              </div>
-                            </div>
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-12 text-center contact-msg-button">
                               <button
                                 type="submit"
                                 class="button button-a button-big button-rouded"
@@ -727,68 +416,13 @@ provided code optimization, which improved customer service and product quality
                         </form>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="title-box-2 pt-4 pt-md-0">
-                        <h5 class="title-left">Get in Touch</h5>
-                      </div>
-                      <div class="more-info">
-                        <p class="lead">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facilis dolorum dolorem soluta quidem expedita
-                          aperiam aliquid at. Totam magni ipsum suscipit amet?
-                          Autem nemo esse laboriosam ratione nobis mollitia
-                          inventore?
-                        </p>
-                        <ul class="list-ico">
-                          <li>
-                            <span class="bi bi-geo-alt"></span> 329 WASHINGTON
-                            ST BOSTON, MA 02108
-                          </li>
-                          <li>
-                            <span class="bi bi-phone"></span> (617) 557-0089
-                          </li>
-                          <li>
-                            <span class="bi bi-envelope"></span>
-                            contact@example.com
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="socials">
-                        <ul>
-                          <li>
-                            <a href=""
-                              ><span class="ico-circle"
-                                ><i class="bi bi-facebook"></i></span
-                            ></a>
-                          </li>
-                          <li>
-                            <a href=""
-                              ><span class="ico-circle"
-                                ><i class="bi bi-instagram"></i></span
-                            ></a>
-                          </li>
-                          <li>
-                            <a href=""
-                              ><span class="ico-circle"
-                                ><i class="bi bi-twitter"></i></span
-                            ></a>
-                          </li>
-                          <li>
-                            <a href=""
-                              ><span class="ico-circle"
-                                ><i class="bi bi-linkedin"></i></span
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- End Contact Section -->
     </main>
     <!-- End #main -->
@@ -800,7 +434,7 @@ provided code optimization, which improved customer service and product quality
           <div class="col-sm-12">
             <div class="copyright-box">
               <p class="copyright">
-                Victor Sheng Zhang &copy; All Rights Reserved
+                Created by Victor Sheng Zhang &copy; All Rights Reserved
               </p>
               <div class="credits">
                 Theme Based on <strong>DevFolio</strong> by
@@ -821,14 +455,9 @@ provided code optimization, which improved customer service and product quality
     ></a>
 
     <!-- Vendor JS Files -->
-    <script src="vendor/purecounter/purecounter.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="vendor/swiper/swiper-bundle.min.js"></script>
     <script src="vendor/typed.js/typed.min.js"></script>
-    <script src="vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
     <script src="/js/main.js"></script>
   </body>
-</html> -->
+</html>
