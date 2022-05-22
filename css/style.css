@@ -164,10 +164,15 @@ a:hover {
   place-content: center;
 }
 
-.icon-color {
+.icon-style {
   color: #13a1fa;
   font-size: 28px;
   padding: 0.5rem;
+}
+@media only screen and (max-width: 844px) and (orientation: portrait) {
+  .icon-style {
+    padding: 0.35rem;
+  }
 }
 
 .first-icon-color {
@@ -793,7 +798,7 @@ a:hover {
 .photo-size {
   width: 400px;
   height: auto;
-  margin-top: 1.5cm;
+  margin-top: 0.5cm;
 }
 
 /*--------------------------------------------------------------
