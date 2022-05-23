@@ -916,6 +916,12 @@ a:hover {
 .tech-fincad-adj {
   padding-bottom: 0.05cm;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .tech-fincad-adj {
+    margin-top: 1cm;
+    padding-bottom: 0.05cm;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact
