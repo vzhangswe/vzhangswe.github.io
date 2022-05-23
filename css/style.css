@@ -139,6 +139,12 @@ a:hover {
   font-size: 2rem;
   position: relative;
 }
+@media only screen and (max-width: 844px) and (orientation: portrait) {
+  .title-left {
+    margin-top: 0.5cm;
+  }
+}
+
 .title-left:before {
   content: "";
   position: absolute;
@@ -171,7 +177,7 @@ a:hover {
 }
 @media only screen and (max-width: 844px) and (orientation: portrait) {
   .icon-style {
-    padding: 0.35rem;
+    padding: 0.32rem;
   }
 }
 
