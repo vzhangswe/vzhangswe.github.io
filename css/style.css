@@ -279,6 +279,31 @@ a:hover {
   transition: all 1s;
 }
 
+.jobtracker {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2cm;
+  margin-top: 0.5cm;
+  place-items: center;
+}
+
+.jobtracker-img {
+  display: block;
+  /* overflow: hidden; */
+
+  transform: scale(0.9);
+}
+
+.jobtracker-img:hover img {
+  transform: scale(1.1);
+}
+
+.jobtracker-img img {
+  transition: all 1s;
+}
+
 .yelp {
   width: 100%;
   height: auto;
