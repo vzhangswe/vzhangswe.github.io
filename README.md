@@ -1,4 +1,4 @@
-# vszdev.github.io
+# szhangdev.github.io
 
 Source code for my personal website.
 Contains a copy of my resume, as well as some links to my personal page.
