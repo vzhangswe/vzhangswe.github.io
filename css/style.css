@@ -841,22 +841,35 @@ a:hover {
 /*--------------------------------------------------------------
 # Work Experience
 --------------------------------------------------------------*/
+
+.aws-logo {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkedin-logo {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .sap-logo {
   width: 25%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.sap-img {
+.general-img {
   display: block;
   transform: scale(1);
 }
 
-.sap-img:hover img {
+.general-img:hover img {
   transform: scale(1.2);
 }
 
-.sap-img img {
+.general-img img {
   transition: all 1s;
 }
 
