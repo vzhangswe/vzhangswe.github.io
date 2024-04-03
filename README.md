@@ -1,7 +1,6 @@
 # viczhang.me
 
 Source code for my [personal website](https://viczhang.me/).
-Contains a copy of my resume, as well as some links to my personal page.
 
 # Built using
 
